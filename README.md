@@ -2,7 +2,21 @@
 
 This repository does not initialize the SD card or the SDMMC peripheral. To use it, simply include the header file and call sd_card_io_test() after your own initialization.
 
-# Example usage
+## To install
+
+To add this component to your project, run:
+```
+idf.py add-dependency "syxiao2002/sdmmc_perf_test^1.0.0"
+```
+
+Or download the archive, and then add **REQUIRES** in your ```main/CMakeLists.txt```
+```
+idf_component_register(SRCS ${srcs}
+    INCLUDE_DIRS "."
+    REQUIRES sdmmc_perf_test)
+```
+
+## Example usage
 ```
 #include "io_test.h"
 
