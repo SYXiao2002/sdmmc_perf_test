@@ -1,5 +1,7 @@
 # ESP32: SD card I/O test using 1-line sdmmc
 
+This repository does not initialize the SD card or the SDMMC peripheral. To use it, simply include the header file and call sd_card_io_test() after your own initialization.
+
 # Example usage
 ```
 #include "io_test.h"
